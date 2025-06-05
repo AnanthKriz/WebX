@@ -31,7 +31,8 @@ def check_url_vuln(url):
         except requests.exceptions.RequestException as e:
             print(f"[!] Request failed: {e}")
 
-if _name_ == "_main_":
+# Corrected the spelling of the special variable __name__
+if __name__ == "__main__":
     banner()
     if len(sys.argv) != 2:
         print("Usage: python webx.py <URL>")
